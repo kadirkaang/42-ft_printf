@@ -6,7 +6,7 @@
 /*   By: kgoc <kgoc@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 14:03:11 by kgoc              #+#    #+#             */
-/*   Updated: 2022/11/22 23:06:43 by kgoc             ###   ########.fr       */
+/*   Updated: 2022/11/23 15:25:06 by kgoc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_print_str(char *str)
 	int	i;
 
 	if (!str)
-		return(write(1, "(null)", 6));
+		return (write(1, "(null)", 6));
 	i = 0;
 	while (str[i])
 	{
@@ -49,7 +49,7 @@ int	ft_int(int number)
 
 int	ft_u_int(unsigned int number)
 {
-	int rtrn;
+	int	rtrn;
 
 	rtrn = 0;
 	if (number > 9)
@@ -74,7 +74,7 @@ int	ft_hex_nbr(unsigned int number, char c)
 
 int	ft_point(unsigned long a, int sign)
 {
-	int rtrn;
+	int	rtrn;
 
 	rtrn = 0;
 	if (sign == 1)

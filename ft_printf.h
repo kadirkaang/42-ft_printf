@@ -6,7 +6,7 @@
 /*   By: kgoc <kgoc@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 14:07:24 by kgoc              #+#    #+#             */
-/*   Updated: 2022/11/22 23:28:34 by kgoc             ###   ########.fr       */
+/*   Updated: 2022/11/23 15:56:58 by kgoc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	ft_int(int number);
 int	ft_u_int(unsigned int number);
 int	ft_hex_nbr(unsigned int number, char c);
 int	ft_point(unsigned long a, int sign);
+int	ft_print_data(va_list *args, const char c);
 
 #endif
