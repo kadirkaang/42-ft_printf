@@ -6,7 +6,7 @@
 /*   By: kgoc <kgoc@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 14:03:09 by kgoc              #+#    #+#             */
-/*   Updated: 2022/11/23 15:24:19 by kgoc             ###   ########.fr       */
+/*   Updated: 2022/12/01 12:57:52 by kgoc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_print_data(va_list *args, const char c)
 	else if (c == 's')
 		return (ft_print_str(va_arg((*args), char *)));
 	else if (c == 'p')
-		return (ft_point(va_arg((*args), unsigned long), 1));
+		return (ft_point(va_arg((*args), unsigned long long), 1));
 	else if (c == 'd' || c == 'i')
 		return (ft_int(va_arg((*args), int)));
 	else if (c == 'u')

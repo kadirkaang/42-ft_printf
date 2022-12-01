@@ -6,7 +6,7 @@
 /*   By: kgoc <kgoc@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 14:03:11 by kgoc              #+#    #+#             */
-/*   Updated: 2022/11/23 15:25:06 by kgoc             ###   ########.fr       */
+/*   Updated: 2022/12/01 12:55:46 by kgoc             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	ft_hex_nbr(unsigned int number, char c)
 	return (rtrn + 1);
 }
 
-int	ft_point(unsigned long a, int sign)
+int	ft_point(unsigned long long a, int sign)
 {
 	int	rtrn;
 
@@ -83,7 +83,7 @@ int	ft_point(unsigned long a, int sign)
 		sign = 0;
 	}
 	if (a > 15)
-		rtrn = ft_point((a / 16), sign);
+		rtrn += ft_point((a / 16), 0);
 	write(1, &"0123456789abcdef"[a % 16], 1);
 	return (rtrn + 1);
 }
