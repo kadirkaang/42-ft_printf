@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 FLAG = -Wall -Wextra -Werror
 SRC  = 	ft_printf.c \
-		ft_printf_u
+		ft_printf_utils.c
 
 all: $(NAME)
 
