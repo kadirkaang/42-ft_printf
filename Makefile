@@ -1,6 +1,7 @@
 NAME = libftprintf.a
 FLAG = -Wall -Wextra -Werror
-SRC = $(shell find . -name "ft_*.c")
+SRC  = 	ft_printf.c \
+		ft_printf_u
 
 all: $(NAME)
 
@@ -14,4 +15,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re.
